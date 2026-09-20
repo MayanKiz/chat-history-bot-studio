@@ -47,7 +47,7 @@ def login_user(username: str, password: str) -> bool:
 # =========================================================
 def add_bot(username: str, name: str, file_text: str, persona: str = None) -> None:
     """
-    Sample Message
+    Stores bot records in the user collection.
       users/{username}/bots/{bot_name}
     Supports optional 'persona' (personality description).
     """

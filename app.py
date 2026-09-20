@@ -253,7 +253,7 @@ if "show_inline_login" not in st.session_state:
 # can login or register, and a section displaying the user's login status. The code handles user
 # authentication, such as logging in, registering, and logging out. It also provides a tip for
 # managing bots and uploading files.
-Sample Message
+with st.sidebar:
     st.markdown("<div style='display:flex;align-items:center;gap:10px;'><div style='width:44px;height:44px;border-radius:10px;background:#6c63ff;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700'>CD</div><div><b style='font-size:16px;color:#fff'>ChatDouble</b><div class='Sample Message'>Personal chatbots from exports</div></div></div>", unsafe_allow_html=True)
     st.markdown("---")
     st.subheader("🔐 Account")
@@ -359,7 +359,7 @@ else:
             col_main, col_side = st.columns([2, 0.9])
 
             # Right side bot list
-            Sample Message
+            with col_side:
                 st.markdown("<div class='card'><b>Your Bots</b></div>", unsafe_allow_html=True)
                 for b in user_bots:
                     st.markdown(
@@ -633,7 +633,7 @@ Do NOT invent names or placeholders like {{User's Name}}.
 4) If you don't know a fact, ask — don't assume.
 STRICT RULES:
 - NEVER use placeholders like [User], [User's Name], {user}, <name>, or anything inside {{}}, [], <>.
-Sample Message
+- Keep responses grounded in the provided conversation.
 - If you do NOT know a name from the real examples, say “I don’t know, you never told me.”
 - NEVER invent formatting like **bold**, __underline__, *, ~, or any markdown.
 - NEVER use too many emojis in a reply, use them as same frequency in chat. Keep it natural, not exaggerated and hallucinated.
@@ -885,7 +885,7 @@ RULES:
 5) Your tone, slang, maturity, emotions must match the examples — not generic AI tone.
 STRICT RULES:
 - NEVER use placeholders like [User], [User's Name], {user}, <name>, or anything inside {{}}, [], <>.
-Sample Message
+- Keep responses grounded in the provided conversation.
 - If you do NOT know a name from the real examples, say “I don’t know, you never told me.”
 - NEVER invent formatting like **bold**, __underline__, *, ~, or any markdown.
 - NEVER use too many emojis in a reply, use them as same frequency in chat. Keep it natural, not exaggerated and hallucinated.

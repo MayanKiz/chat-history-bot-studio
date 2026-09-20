@@ -22,7 +22,7 @@ from firebase_db import (
 # ---------------------------
 # Page config + Gemini client
 # ---------------------------
-st.set_page_config(page_title="ChatDouble", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="Chat History Bot Studio", page_icon="🤖", layout="wide")
 API_KEY = os.getenv("GEMINI_API_KEY") or (st.secrets.get("GEMINI_API_KEY") if st.secrets else None)
 if not API_KEY:
     # app should still load if missing key — show warning later where generation happens

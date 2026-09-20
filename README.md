@@ -2,56 +2,57 @@
 
 ## Description
 
-This repository contains a maintainable implementation with a focused user interface and a clear development workflow.
+A Streamlit application for importing chat history, managing bot profiles, and testing retrieval-assisted conversational responses.
+
+## Quick Start
+
+Create a Python environment, install the project dependencies, configure Firebase and AI provider credentials, then run `streamlit run app.py`.
 
 ## Tech Stack
 
-Python, Streamlit
+Project-specific tooling
 
 ## Key Features
 
-- Firebase integration.
+- User authentication.
+- bot management.
+- chat-history import.
+- Firebase persistence.
+- retrieval-assisted response generation.
+- local chat sessions.
 
-## How to Run
+## Project Structure
+
+The primary entry point is `app.py`. Supporting components, services, styles, and configuration files remain organized next to the relevant application layer.
+
+## Setup and Installation
 
 ### Prerequisites
 
-Install the runtime and package manager required by the technology stack above. If the project uses environment variables, create a local `.env` file from the available example configuration and keep secrets out of version control.
+Install the runtime required by the project. JavaScript projects require Node.js and npm. Python projects require Python 3. External integrations such as Supabase, Firebase, AI providers, Telegram, or browser camera access must be configured through environment variables or explicit local permissions.
 
-### Installation
+### Run Locally
 
-```bash
-# Clone the repository
-git clone <repository-url>
-cd chat-history-bot-studio
-
-# Install dependencies when package.json is present
-npm install
+```text
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
 ```
 
-For Python projects, install dependencies with `pip install -r requirements.txt` when that file is present. For C or C++ projects, use the compiler and build instructions appropriate to the source files.
+## Deployment
 
-### Start the application
+For a static project, publish the project directory through a static hosting provider. For a Next.js or Vite project, connect the repository to the hosting provider and use the package script defined in `package.json`. Configure all required secrets in the hosting provider dashboard; do not commit credentials to source control.
 
-```bash
-npm run dev
-```
+## Notes
 
-Use the project-specific entry point when the repository does not define an `npm run dev` script. Common alternatives include `npm start`, `python <entry-file>.py`, or opening the static `index.html` file in a browser.
+This repository is intended for learning, prototyping, and controlled demonstration. Review permissions, user consent, and third-party service terms before enabling camera, messaging, database, or automation features in a public deployment.
 
-## Project Status
+## Contact
 
-This repository is maintained as a professional development project.
+For questions, collaboration, or technical discussion, use the following professional channels:
 
-## Contact and Collaboration
-
-For questions, collaboration, technical discussion, or project-related inquiries, use any of the following professional contact channels:
-
-- **Instagram:** [@rao.mynkk](https://www.instagram.com/rao.mynkk/)
-- **Email:** [rao.mynkk@gmail.com](mailto:rao.mynkk@gmail.com)
-- **WhatsApp:** [+24106603434](https://wa.me/24106603434)
-- **LinkedIn:** [Mayank Yadav](https://www.linkedin.com/in/mayank-yadav-2803202a5?utm_source=share_via&utm_content=profile&utm_medium=member_android)
-
-Questions and collaboration requests are welcome. Please use the channel that best matches the nature of your inquiry.
-
-> **Project watermark:** Mayank Yadav · @rao.mynkk
+- Instagram: [@rao.mynkk](https://www.instagram.com/rao.mynkk/).
+- Email: [rao.mynkk@gmail.com](mailto:rao.mynkk@gmail.com).
+- WhatsApp: [+24 106 603 434](https://wa.me/24106603434).
+- LinkedIn: [Mayank Yadav](https://www.linkedin.com/in/mayank-yadav-2803202a5/).
